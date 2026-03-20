@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+  <title>Kỉ Yếu</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f3e4f7, #e8d5f5);
+}
+
+/* Container */
+.petals {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Cánh hoa */
+.petals span {
+    position: absolute;
+    top: -50px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(45deg);
+    opacity: 0.8;
+}
+
+/* Tạo hình cánh hoa bằng CSS */
+.petal {
+    width: 12px;
+    height: 18px;
+}
+
+/* Màu thu */
+.c1 { background: #ffb7a5; } /* cam nhạt */
+.c2 { background: #ffd6a5; } /* vàng cam */
+.c3 { background: #ffc8dd; } /* hồng pastel */
+.c4 { background: #f9c5d1; } /* hồng đậm hơn */
+
+/* Animation rơi + lượn */
+@keyframes fall {
+    0% {
+        transform: translate(0, -50px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100px, 110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Fake random */
+.petals span:nth-child(1)  { left: 5%;  animation: fall 8s linear infinite; }
+.petals span:nth-child(2)  { left: 15%; animation: fall 10s linear infinite; }
+.petals span:nth-child(3)  { left: 25%; animation: fall 9s linear infinite; }
+.petals span:nth-child(4)  { left: 35%; animation: fall 11s linear infinite; }
+.petals span:nth-child(5)  { left: 45%; animation: fall 8.5s linear infinite; }
+.petals span:nth-child(6)  { left: 55%; animation: fall 10.5s linear infinite; }
+.petals span:nth-child(7)  { left: 65%; animation: fall 9.5s linear infinite; }
+.petals span:nth-child(8)  { left: 75%; animation: fall 11.5s linear infinite; }
+.petals span:nth-child(9)  { left: 85%; animation: fall 8.2s linear infinite; }
+.petals span:nth-child(10) { left: 95%; animation: fall 10.2s linear infinite; }
+
+/* Lệch nhẹ để tạo random */
+.petals span:nth-child(odd) {
+    animation-direction: alternate;
+}
+
+    * {
+      animation: appear 0.5s ease;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    @keyframes appear {
+      from { opacity: 0; 
+      scale: 0.5;}
+      to { opacity: 1; scale: 1;}
+    }
+    .logo{
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+    .logo a {
+    color: white;
+    font-size: 30px;
+    transition: 0.3s ease ;
+    display: inline-block;
+}
+    .logo a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+  </style>
+</head>
+
+<body>
+<div class="petals">
+  <span class="petal c1"></span>
+  <span class="petal c2"></span>
+  <span class="petal c3"></span>
+  <span class="petal c4"></span>
+  <span class="petal c1"></span>
+  <span class="petal c2"></span>
+  <span class="petal c3"></span>
+  <span class="petal c4"></span>
+  <span class="petal c1"></span>
+  <span class="petal c2"></span>
+  <span class="petal c3"></span>
+  <span class="petal c4"></span>
+</div>
+<header>
+  <div class="logo" style="border-radius: 15px;">
+    <a href="trangchu.html" target="noidung" style="text-decoration: none; font-size: 30px;"><h1>Kỉ Yếu 12C9</h1></a>
+  </div>
+  <nav style="border-radius: 15px;">
+  <a href="trangchu.html" target="noidung">Trang Chủ</a>
+  <a href="hoatdong.html" target="noidung">Hoạt Động</a>
+  <a href="thanhvien.html" target="noidung">Thành Viên</a>
+</nav>
+</header>
+
+<iframe name="noidung" src="trangchu.html" width="100%" height="800vh" style="border:none; padding:30px;"></iframe>
+</body>
+</html>
