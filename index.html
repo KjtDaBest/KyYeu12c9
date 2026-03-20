@@ -12,7 +12,7 @@
     background: linear-gradient(135deg, #f3e4f7, #e8d5f5);
 }
 
-/* Container */
+
 .petals {
     position: fixed;
     width: 100%;
@@ -20,7 +20,7 @@
     pointer-events: none;
 }
 
-/* Cánh hoa */
+
 .petals span {
     position: absolute;
     top: -50px;
@@ -29,19 +29,18 @@
     opacity: 0.8;
 }
 
-/* Tạo hình cánh hoa bằng CSS */
+
 .petal {
     width: 12px;
     height: 18px;
 }
 
-/* Màu thu */
-.c1 { background: #ffb7a5; } /* cam nhạt */
-.c2 { background: #ffd6a5; } /* vàng cam */
-.c3 { background: #ffc8dd; } /* hồng pastel */
-.c4 { background: #f9c5d1; } /* hồng đậm hơn */
+.c1 { background: #ffb7a5; } 
+.c2 { background: #ffd6a5; } 
+.c3 { background: #ffc8dd; } 
+.c4 { background: #f9c5d1; } 
 
-/* Animation rơi + lượn */
+
 @keyframes fall {
     0% {
         transform: translate(0, -50px) rotate(0deg);
@@ -56,7 +55,7 @@
     }
 }
 
-/* Fake random */
+
 .petals span:nth-child(1)  { left: 5%;  animation: fall 8s linear infinite; }
 .petals span:nth-child(2)  { left: 15%; animation: fall 10s linear infinite; }
 .petals span:nth-child(3)  { left: 25%; animation: fall 9s linear infinite; }
@@ -68,7 +67,7 @@
 .petals span:nth-child(9)  { left: 85%; animation: fall 8.2s linear infinite; }
 .petals span:nth-child(10) { left: 95%; animation: fall 10.2s linear infinite; }
 
-/* Lệch nhẹ để tạo random */
+
 .petals span:nth-child(odd) {
     animation-direction: alternate;
 }
