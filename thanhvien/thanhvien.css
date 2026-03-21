@@ -87,3 +87,45 @@
     opacity: 0;
     animation-delay: 0.2s;
 }
+
+#hgb2 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+#hgb3 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+
+#hgb4 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1.1s;
+}
+
+#qa1 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+#qa2 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+#qa3 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+
+#qa4 {
+    animation: fadein 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1.1s;
+}

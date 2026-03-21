@@ -102,6 +102,20 @@
 </head>
 
 <body>
+<audio id="bgm" loop>
+    <source src="Sweet Boy.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const bgm = document.getElementById("bgm");
+
+
+  bgm.volume = 0.1; 
+
+  document.addEventListener("click", () => {
+    bgm.play();
+  });
+</script>
 <div class="petals">
   <span class="petal c1"></span>
   <span class="petal c2"></span>
@@ -121,6 +135,7 @@
     <a href="trangchu.html" target="noidung" style="text-decoration: none; font-size: 30px;"><h1>Kỉ Yếu 12C9</h1></a>
   </div>
   <nav style="border-radius: 15px;">
+    
   <a href="trangchu.html" target="noidung">Trang Chủ</a>
   <a href="hoatdong.html" target="noidung">Hoạt Động</a>
   <a href="thanhvien.html" target="noidung">Thành Viên</a>
